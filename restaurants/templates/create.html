@@ -7,7 +7,7 @@
     <body>
     	<form action ="{% url 'restaurant-create'%}" method ="POST">
     		{% csrf_token %}
-    	{{form}}
+    	{{form.as.p}}
     	<input type ='submit' value="create">
 
     </form>
